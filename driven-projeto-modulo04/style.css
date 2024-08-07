@@ -1,0 +1,232 @@
+body{
+    box-sizing: border-box;
+}
+
+.conteudo{
+    width: 414px;
+    background-color: #EEEEEE;
+}
+.barra-topo{
+    background-color: #CF2B2B;
+    box-shadow: 0px 6px 6px 0px #00000040;
+    height: 92px;
+    width: 414px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+
+}
+
+
+.barra-topo h1{
+    font-family: Righteous ,sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 8px;
+   padding-left: 19px;
+}
+.barra-topo p{
+    font-family: roboto ,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-bottom: 18px;
+   padding-left: 19px;
+}
+
+.categorias .top {
+    padding-top: 106px;
+}
+.sobremesas{
+    padding-bottom: 108px;
+}
+
+
+.separador{
+    display: flex;
+    justify-content: space-between;
+}
+
+.categorias{
+    font-family: Righteous ,sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    padding-left: 19px;
+    color: #333333;
+    margin-bottom: 17px;
+    padding-top: 10px;
+}
+.pratos,.bebidas,.sobremesas{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+.comida,.sobremesacard,.bebida{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: roboto ,sans-serif;
+    margin-left: 19px;
+    padding-left: 14px;
+    padding-top: 18px;
+    padding-right: 14px;
+    width: 172px;
+    height: 216px;
+    border-radius: 9px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 10px 0px #00000040;
+
+}
+.comida h1,.sobremesacard h1,.bebida h1{
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+.definicao{
+    font-size: 15px;
+    font-weight: 300;
+    color:  #A6A6A6;
+}
+.comida p,.sobremesacard p,.bebida p{
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+.comida img,.bebida img,.sobremesacard img{
+  width:144px;
+  height:87px;
+  border-radius: 4px;
+}
+.barra-inferior{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 414px;
+    height: 92px; 
+    background-color: #ffffff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botao{
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    border: 0px;
+    background-color:#CBCBCB;
+}
+.barra-inferior h1{
+    color: #FFFFFF;
+    font-family: roboto ,sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+.habilitado{
+    background-color: #32B72F;
+    font-family: roboto ,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+
+}
+.selecionado {
+    box-shadow: 0px 0px 0px 5px #32B72F inset;
+
+}
+ .selecionado ion-icon{
+    display: flex;
+}
+ion-icon{
+    display: none;
+    font-size: 19px;
+    color: #32B72F;
+}
+.conteudo .habilitar{
+  display: flex; 
+}
+.centralizar{
+    display: none;
+    position: fixed;
+    z-index: 2; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 414px; 
+    background-color: rgba(255, 255, 255,0.70);
+    
+}
+.confirmarPedido{  
+    background-color: #50D074;
+    font-family: roboto ,sans-serif;
+    width:377px ;
+    height:353px ;
+    border-radius: 9px;
+    box-shadow: 10px 10px 10px 3px #00000040;
+}
+.confirmandoP{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jaConfirmados div{
+    display: flex;
+   justify-content: space-between;
+   font-weight: 400;
+   font-size:22px ;
+   color:#FFFFFF;
+   padding-top: 20px;
+   padding-left: 25px;
+   padding-right: 25px;
+
+}
+.confirmandoP{
+    font-weight: 700;
+    font-size:22px ;
+    color:#FFFFFF;
+    padding-top: 30px;
+}
+.botao-confirma button{
+    border-radius: 100px;
+    width: 329px;
+    height: 52px;
+    margin-top: 25px;
+    border: 0px;
+}
+.botao-cancela button{
+    width: 329px;
+    height: 52px;
+    margin-top: 25px;
+    background-color: #50D074;
+    border: 0px;
+}
+.botao-confirma,.botao-cancela{
+    height: 52px;
+    display: flex;
+    justify-content: center;
+   
+}
+.botao-confirma a{
+    text-decoration: none;
+
+}
+.botao-confirma h1{
+    font-weight: 700;
+    font-size:22px ;
+    color: #50D074;
+    font-family: roboto ,sans-serif;
+    font-weight: 700;  
+}
+.botao-cancela h1{
+    font-size:20px ;
+    color:#FFFFFF;
+    font-family: roboto ,sans-serif;
+    font-weight: 700;  
+}

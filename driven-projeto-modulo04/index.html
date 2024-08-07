@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Driven-eats</title>
+</head>
+<body>
+ 
+    <div class="conteudo"> 
+    <div class="centralizar">
+    <div class="confirmarPedido">
+        <div class="confirmandoP">
+            <h1>Confirmar seu pedido</h1></div>
+        <div class="jaConfirmados">
+            <div ><h1 class="h1comida"></h1><span class="valorcomi"></span></div>
+            <div ><h1 class="h1bebida"></h1><span class="valorbebi"></span></div>
+            <div><h1 class="h1sobremesa"></h1><span class="valorsobre"></span></div>
+            <div><h1>Total</h1><span class="valorTot"></span></div>
+        </div>
+        <div onclick="mensagemZap()" class="botao-confirma">
+            <a id="link-whatsapp" href="#"><button><h1>Tudo certo,pode pedir</h1></button></a>
+        </div>
+        <div onclick="desabilitar()" class="botao-cancela">
+            <button><h1>cancelar</h1></button>
+        </div>
+    </div></div>
+        <div class="barra-topo">
+            <h1>Driven-eats</h1>
+            <p>Sua comida em 6 minutos</p>
+        </div>
+       <div class="categorias"> <h1 class="top">Primeiro,seu prato</h1></div>
+        <div class="pratos">
+            <div onclick="selecionandoPrato('calabresa')" class="comida calabresa">
+                <img src="projeto__driven-eats__imagens/pf_calabresa.png" alt="">
+                <h1>Prato de calabresa</h1>
+                <span class="definicao">acompanha arroz,feijão e salada</span>
+                <div class="separador"><p>R$ <span class="valor">14,90</span></p><span><ion-icon name="checkmark-circle"></ion-icon></span></div>
+            </div>
+            <div onclick="selecionandoPrato('carne')"class="comida carne">
+                 <img src="projeto__driven-eats__imagens/pf_carne.jpg" alt="">
+                 <h1>Prato de carne</h1>
+                 <span class="definicao">acompanha arroz,feijão e salada</span>
+                 <div class="separador"><p>R$ <span class="valor">13,90</span></p><span><ion-icon name="checkmark-circle"></ion-icon></span></div>
+                </div>
+            <div onclick="selecionandoPrato('frango')"class="comida frango">
+                <img src="projeto__driven-eats__imagens/pf_frango.jpg" alt="">
+                <h1>Prato de frango</h1>
+                <span class="definicao">acompanha arroz,feijão e salada</span>
+                <div class="separador"><p>R$ <span class="valor">11,90</span></p><span><ion-icon name="checkmark-circle"></ion-icon></span></div>
+            </div>
+        </div>
+        <div class="categorias"> <h1 >Agora,sua bebida</h1></div>
+        <div class="bebidas">
+            <div onclick="selecionandoBebida('coca')" class="bebida coca">
+                <img src="projeto__driven-eats__imagens/coca.png" alt="">
+                 <h1>coca-cola</h1>
+                 <span class="definicao">refrigerante geladinho</span>
+                 <div class="separador"><p>R$ <span class="valor">5,90</span></p> <span><ion-icon name="checkmark-circle"></ion-icon></span></div>
+                 
+            </div>
+            <div onclick="selecionandoBebida('fanta')" class="bebida fanta">
+                <img src="projeto__driven-eats__imagens/fanta.png" alt="">
+                 <h1>fanta laranja</h1>
+                 <span class="definicao">refrigerante geladinho</span>
+                 <div class="separador"><p>R$ <span class="valor">4,50</span></p> <span><ion-icon name="checkmark-circle"></ion-icon></span></div>
+            </div>
+            <div onclick="selecionandoBebida('suco')"class="bebida suco">
+                <img src="projeto__driven-eats__imagens/suco.png" alt="">
+                 <h1>suco de laranja</h1>
+                 <span class="definicao">suco geladinho</span>
+                 <div class="separador"><p>R$ <span class="valor">5,50</span></p> <span><ion-icon name="checkmark-circle"></ion-icon></span></div>
+            </div>
+        </div>
+        <div class="categorias"> <h1 >Por fim,sua sobremesa</h1></div>
+        <div class="sobremesas">
+            <div onclick="selecionandoSobremesa('brownie')" class="sobremesacard brownie">
+                <img src="projeto__driven-eats__imagens/brownie.jpg" alt="">
+                 <h1>brownie</h1>
+                 <span class="definicao">delicia de chocolate</span>
+                 <div class="separador"><p>R$ <span class="valor">7,90</span></p><span><ion-icon name="checkmark-circle"></ion-icon></span></div>
+            </div>
+            <div onclick="selecionandoSobremesa('pudim')" class="sobremesacard pudim">
+                <img src="projeto__driven-eats__imagens/pudim.jpg" alt="">
+                 <h1>pudim de leite</h1>
+                 <span class="definicao">delicia da casa</span>
+                 <div class="separador"><p>R$ <span class="valor">6,90</span></p><span><ion-icon name="checkmark-circle"></ion-icon></span></div>
+            </div>
+            <div onclick="selecionandoSobremesa('mouse')" class="sobremesacard mouse">
+                <img src="projeto__driven-eats__imagens/mouse.jpg" alt="">
+                 <h1>mousse</h1>
+                 <span class="definicao">fofinho</span>
+                 <div class="separador"><p>R$ <span class="valor">3,90</span></p><span><ion-icon name="checkmark-circle"></ion-icon></span></div>
+            </div>
+        </div>
+    
+        <div class="barra-inferior">
+            <button class="botao" onclick="confirmaPedido()"><h1>Selecione os 3 itens para fechar o pedido</h1></button>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
